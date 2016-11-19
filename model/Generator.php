@@ -283,6 +283,7 @@ class Generator extends \mootensai\enhancedgii\BaseGenerator {
             $this->modelClass = "{$this->nsModel}\\{$modelClassName}";
             $this->tableSchema = $tableSchema;
             $this->isTree = !array_diff(self::getTreeColumns(), $tableSchema->columnNames);
+            $this->isTree = false;
 //            $this->controllerClass = $this->nsController . '\\' . $modelClassName . 'Controller';
             $params = [
                 'tableName' => $tableName,
