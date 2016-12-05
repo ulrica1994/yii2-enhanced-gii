@@ -5,7 +5,7 @@
 ?>
 <blockquote class="alert-warning" style="font-size: small">
     <strong>Note : </strong><br />
-    111To generate nested or tree, please use <a href="http://demos.krajee.com/tree-manager#prepare-database">kartik-v\yii2-tree-manager</a> for table structure<br />
+    To generate nested or tree, please use <a href="http://demos.krajee.com/tree-manager#prepare-database">kartik-v\yii2-tree-manager</a> for table structure<br />
     <strong>If table contains all the defined columns, the generator will automatically generate model that extends </strong><code>\kartik\tree\models\Tree</code>
 </blockquote>
 <?php

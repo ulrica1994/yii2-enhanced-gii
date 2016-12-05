@@ -536,4 +536,17 @@ abstract class BaseGenerator extends \yii\gii\Generator
         }
         return $tableName;
     }
+
+    
+    public function getModelName($tableName)
+    {
+        $modelName = '';
+        $db = $this->getDbConnection();
+        $sql = "show table status where name='$tableName'";
+        $result = $db->createCommand($sql)->queryOne();
+
+        $modelName = $result?$result['Comment']:'';
+
+        return $modelName;
+    }
 }

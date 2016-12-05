@@ -47,6 +47,7 @@ use mootensai\behaviors\UUIDBehavior;
 class <?= $className ?> extends <?= ($isTree) ? '\kartik\tree\models\Tree' . "\n" : '\\' . ltrim($generator->baseModelClass, '\\') . "\n" ?>
 {
 <?= (!$isTree) ? "    use \\mootensai\\relation\\RelationTrait;\n" : "" ?>
+    public $modelName = "<?=$modelName?>";
 
     /**
      * @inheritdoc
